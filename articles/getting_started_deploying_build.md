@@ -19,19 +19,19 @@ Click on the build number of the build you want to deploy from either the dashbo
 
 <div class="bs-callout bs-callout-info">
 	<h4>Configured?</h4>
-If you have not configured your project for deployment, that button will read “Configure for OTA Deployment” and you have to set up your project first.
+If you have not configured your project for deployment, that button on the Build Details page will read “Configure for OTA Deployment”. You have to set up your project first.
 </div>
 
 ###Step 2. Enter the Deploy Details
 
 For deploy details, you can optionally enter the following values:
 
-Distribution Lists:  You can enter one or more Testflight distribution lists. If this field is blank, it will go to all users who are part of the project.
+- <code>Distribution Lists</code>:  You can enter one or more Testflight distribution lists. If this field is blank, it will go to all users who are part of the project.
 
-Notify Users via Email: If you select yes, users who have access to the build will receive a new build email from Testflight. (this defaults to no)
+- <code>Notify Users via Email</code>: If you select yes, users who have access to the build will receive a new build email from Testflight. (this defaults to no)
 
-Release Notes: These are the notes that will be included in both the Testflight email and download page. This is a free text field
+- <code>Release Notes</code>: These are the notes that will be included in both the Testflight email and Testflight download page. 
 
 ###Step 3. Deploy the Build
 
-Once deployed, Distiller sends the app file to Testflight. There is usually a slight delay before Testflight notifies you via email of a new build. 
+Once deployed, Distiller sends the app file to Testflight. There is usually a slight delay before Testflight notifies you via email of a new build. So, be patient.

@@ -24,7 +24,7 @@ This guide covers:
  * This other thing
 
 
-### [Yet another guide](/)
+### [testing sidebar](/)
 
 This guide covers:
 

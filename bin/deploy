@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll build && git co gh-pages && cp -r _site/* . && git add . && git commit -m "update" && git push upstream gh-pages && git co -
+jekyll build && git co head _site/sitemap.xml && git co gh-pages && cp -r _site/* . && git add . && git commit -m "update" && git push upstream gh-pages && git co -

@@ -1,6 +1,8 @@
 ---
 layout: article
 title: "Setup for OTA Deployment"
+category: start
+order: 2
 ---
 
 #Getting Started - Setup for OTA Deployment
@@ -44,8 +46,8 @@ Select “App Store and Ad Hoc” for the type of certificate you wish to create
 ![Select Certificate Type](/img/04-select-certificate-type.png)
 
 <div class="bs-callout bs-callout-info">
-	<h4>Ignore the next page</h4>
-	Ignore the next page. We’ve already generated a CSR for you. Just click “Continue”
+        <h4>Ignore the next page</h4>
+        Ignore the next page. We’ve already generated a CSR for you. Just click “Continue”
 </div>
 
 ###Step 5. Upload your Distiller CSR
@@ -87,8 +89,8 @@ Select the App ID of the project you are building on Distiller, then click “Co
 Now, associate this new provisioning profile with the new Distiller certificate you just generated. Select the certificate you just created. Click “Continue.”
 
 <div class="bs-callout bs-callout-info">
-	<h4>Find Certificates by Expiration Date</h4>
-	You will have more than one certificate with the same name. This is a known Apple quirk. You have to use the expiry date of the certificate to find the right one. It will be 1 year from the day it was created. If you just created a new certificate, it will be 1 year from today.
+        <h4>Find Certificates by Expiration Date</h4>
+        You will have more than one certificate with the same name. This is a known Apple quirk. You have to use the expiry date of the certificate to find the right one. It will be 1 year from the day it was created. If you just created a new certificate, it will be 1 year from today.
 </div>
 
 ![Select Certificate](/img/10-select-certificate.png)
@@ -98,7 +100,7 @@ Now, associate this new provisioning profile with the new Distiller certificate 
 Now, you can select which devices will be able to download and install the app. Select the devices from your device list and click “Continue.”
 
 <div class="bs-callout bs-callout-info">
-	<h4>Manage users at build level</h4>
+        <h4>Manage users at build level</h4>
 Any device on the provisioning profile will be able to download and install any build that uses that particular provisioning profile. However, Testflight, Hockey and other OTA providers will allow you to notify and restrict access to the build via distribution lists. So, it’s OK to have a very broad list of test and development devices in your provisioning profile.
 </div>
 
@@ -118,12 +120,12 @@ Down the new provisioning profile you just created to your machine, which will b
 
 ###Step 13. Add the Provisioning Profile to your Git Repository.
 
-Locate the iOS project that you’re building on Distiller.  From the root directory, find the /profiles folder (create one if it does not exist). Add the “distiller.mobileprovision” document to this folder. Commit your change and sync the repo with GitHub. This will trigger a new build on Distiller. 
+Locate the iOS project that you’re building on Distiller.  From the root directory, find the /profiles folder (create one if it does not exist). Add the “distiller.mobileprovision” document to this folder. Commit your change and sync the repo with GitHub. This will trigger a new build on Distiller.
 
 ###Step 14. Add your Testflight settings to your repository.
 
 <div class="bs-callout bs-callout-info">
-	<h4>Testflight for now</h4>Distiller is currently integrated with Testflight for OTA deployment. (Hockey App and others are coming soon). An active Testflight account is required to deploy Distiller builds to users. 
+        <h4>Testflight for now</h4>Distiller is currently integrated with Testflight for OTA deployment. (Hockey App and others are coming soon). An active Testflight account is required to deploy Distiller builds to users.
 </div>
 
 Now, add your Testflight API Token and Team Token to your project.  You can locate these tokens here:

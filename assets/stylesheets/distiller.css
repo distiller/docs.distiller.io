@@ -28,3 +28,9 @@
 .bs-docs-nav .navbar-nav > li > a {
         color: rgb(214, 214, 214);
 }
+
+.bs-sidenav .nav-header {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #563d7c;
+}

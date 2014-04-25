@@ -2,8 +2,20 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 exclude: [bin, Gemfile, Gemfile.lock, README.md]
-permalink: /:title
+permalink: /:categories/:title
 pygments: true
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+sections: [
+    ['start', 'Getting Started'],
+    ['tut', 'Tutorial'],
+    ['ref', 'Reference'],
+    ['dev', 'Developers'],
+    ['post', 'Posts']
+]
+
+future: true
+
+baseurl: ''

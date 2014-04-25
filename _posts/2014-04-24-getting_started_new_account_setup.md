@@ -1,9 +1,11 @@
 ---
 layout: article
 title: "Setting Up a New Account"
+category: start
+order: 1
 ---
 
-#Getting Started - Setting up a New Account 
+#Getting Started - Setting up a New Account
 -------
 
 Distiller is integrated with GitHub to make new account creation easy. GitHub has some wrinkles to their OAuth process that you’ll need to be aware of during the set up process.
@@ -11,7 +13,7 @@ Distiller is integrated with GitHub to make new account creation easy. GitHub ha
 
 ###Connecting to GitHub
 
-Go to the Distiller homepage and click "Sign up with GitHub." You will be redirected to GitHub (and asked to sign in if necessary). Click the "Authorize Application" button on the GitHub authorize page. 
+Go to the Distiller homepage and click "Sign up with GitHub." You will be redirected to GitHub (and asked to sign in if necessary). Click the "Authorize Application" button on the GitHub authorize page.
 
 Distiller asks for two separate scopes from Github:
 
@@ -25,7 +27,7 @@ GitHub does not have fine-grained repository access controls as part of their OA
 
 [Contact Github] (https://github.com/contact)
 
-We understand this is a big ask. The nice thing about GitHub Oauth is that you can revoke access at any time without any intervention from us. 
+We understand this is a big ask. The nice thing about GitHub Oauth is that you can revoke access at any time without any intervention from us.
 
 Recognize it’s our business keeping your code safe and acting responsibly. Here are some resources to make you feel comfortable.
 
@@ -37,15 +39,15 @@ Recognize it’s our business keeping your code safe and acting responsibly. Her
 
 [Travis Vachon's GitHub Profile] (https://github.com/travis)
 
-[Jim Rose's GitHub Profile] (https://github.com/jimdotrose) 
+[Jim Rose's GitHub Profile] (https://github.com/jimdotrose)
 
 
-###Hacking around GitHub 
+###Hacking around GitHub
 
 Not there? Well, we came up with a hack around the GitHub repository all or none scope. It’s not perfect, but can give limited access with some hiccups.
 
 1. Create a new user account on GitHub (e.g. distiller-admin@yourcompany.com).
 2. Give this new user admin access to the repository you want to build and deploy on Distiller.
-3. Create a new account on Distiller with this new account. 
+3. Create a new account on Distiller with this new account.
 
 This will allow you to start building with Distiller. You just have to make sure that you log in with this account to the Distiller system.

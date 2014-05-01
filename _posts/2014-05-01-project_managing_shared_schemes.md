@@ -8,7 +8,7 @@ order: 1
 #Project - Managing Shared Schemes
 ---
 
-In order to build and run your tests on Distiller (or any other continuous integration service), you must create Shared Schemes for your application target and ensure that all dependencies (e.g. CocoaPods) have been added to the Scheme.
+In order to build and run your tests on Distiller (or any other continuous integration service), you must create a Shared Scheme for your application target.
 
 To create a Shared Scheme:
 

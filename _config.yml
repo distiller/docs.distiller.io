@@ -10,7 +10,7 @@ redcarpet:
 
 sections: [
     ['start', 'Getting Started'],
-	['project', 'Project'],
+    ['project', 'Project'],
     ['tut', 'Tutorial'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],

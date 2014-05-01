@@ -19,5 +19,5 @@ To create a Shared Scheme:
 3. Locate the application target in the list. Make sure the “Shared” checkbox on the far right is checked.
 [screenshot]
 
-4. Check this file into your repository and use this Shared Scheme in your Distiller project configuration
+4. Check this file into your repository and use this Shared Scheme in your Distiller project configuration.
 [screenshot]

@@ -8,7 +8,11 @@ order: 1
 #Project - Managing Shared Schemes
 ---
 
+<<<<<<< HEAD
 In order to build and run your tests on Distiller (or any other continuous integration service), you must create Shared Schemes for your application target.
+=======
+In order to build and run your tests on Distiller (or any other continuous integration service), you must create a Shared Scheme for your application target.
+>>>>>>> FETCH_HEAD
 
 To create a Shared Scheme:
 

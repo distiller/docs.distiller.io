@@ -26,14 +26,24 @@ If you have not configured your project for deployment, that button on the Build
 
 ###Step 2. Enter the Deploy Details
 
-For deploy details, you can optionally enter the following values:
+First, select the network you use for OTA deployment. Distiller supports both Testflight and Hockey.
+
+For Testflight deployments, you can optionally enter the following values:
 
 - <code>Distribution Lists</code>:  You can enter one or more Testflight distribution lists. If this field is blank, it will go to all users who are part of the project.
 
-- <code>Notify Users via Email</code>: If you select yes, users who have access to the build will receive a new build email from Testflight. (this defaults to no)
+- <code>Notify Users via Email</code>: If you select yes, users who have access to the build will receive a new build email from Testflight.
 
 - <code>Release Notes</code>: These are the notes that will be included in both the Testflight email and Testflight download page.
 
+For Hockey App deployments, you can optionally enter the following values:
+
+- <code>Tags</code>:  You can enter one or more Hockey App tags to limit the distribution of the build. If this field is blank, it will go to all users who are part of the project.
+
+- <code>Notify Users via Email</code>: If you select yes, users who have access to the build will receive a new build email from Hockey App. 
+
+- <code>Release Notes</code>: These are the notes that will be included in both the Hockey App email and Hockey App download page.
+
 ###Step 3. Deploy the Build
 
-Once deployed, Distiller sends the app file to Testflight. There is usually a slight delay before Testflight notifies you via email of a new build. So, be patient.
+Once deployed, Distiller sends the app file to the OTA partner. There is usually a slight delay before Testflight or Hockey notifies you via email of a new build. So, be patient.

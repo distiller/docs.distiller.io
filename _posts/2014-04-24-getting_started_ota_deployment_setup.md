@@ -122,18 +122,29 @@ Down the new provisioning profile you just created to your machine, which will b
 
 Locate the iOS project that you’re building on Distiller.  From the root directory, find the /profiles folder (create one if it does not exist). Add the “distiller.mobileprovision” document to this folder. Commit your change and sync the repo with GitHub. This will trigger a new build on Distiller.
 
-###Step 14. Add your Testflight settings to your repository.
+###Step 14. Add your OTA settings to your repository.
 
 <div class="bs-callout bs-callout-info">
-        <h4>Testflight for now</h4>Distiller is currently integrated with Testflight for OTA deployment. (Hockey App and others are coming soon). An active Testflight account is required to deploy Distiller builds to users.
+        <h4>Testflight and Hockey now available</h4>As of 5/20, Distiller is integrated with Testflight and Hockey for OTA deployment. An active Testflight or Hockey App account is required to deploy Distiller builds to users.
 </div>
 
-Now, add your Testflight API Token and Team Token to your project.  You can locate these tokens here:
+####For Testflight users:
+Add your Testflight API Token and Team Token to your project.  You can locate these tokens here:
 
 API Token: https://www.testflightapp.com/account/#api
 
 Team Token: https://testflightapp.com/dashboard/team/edit/
 
 Click “Save” and you’re all set to deploy new builds to users.
+
+####For Hockey Users:
+You will need to create an API token for your account. 
+
+1. Go to your Hockey account's token page (https://rink.hockeyapp.net/manage/auth_tokens)
+2. Create a new API Token. Use the settings "All Apps" and "Full Access" and name the token "Distiller."
+3. Click "Create"
+4. Now copy the token and go back to Distiller and paste it into the API token field.
+
+Click "Save" and you're all set to deploy new builds to users.
 
 Go to the build details page. On a successful build, you will now see a “Deploy Now” button in the upper right hand corner.  You can now deploy.

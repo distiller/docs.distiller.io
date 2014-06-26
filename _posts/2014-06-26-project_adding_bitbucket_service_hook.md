@@ -2,7 +2,7 @@
 layout: article
 title: "Adding the Distiller Service Hook to your Bitbucket Repo"
 category: project
-order: 2
+order: 3
 ---
 
 #Project - Adding the Distiller Service Hook to your Bitbucket Repo
